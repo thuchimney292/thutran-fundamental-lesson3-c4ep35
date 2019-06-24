@@ -10,13 +10,9 @@ for i in range(month):
     for j in range(n):
         sizes[j]+=50
     print('One month has passed, now here is my flock : ',sizes)
-    max_=0
-    for j in range(n):
-        if max_<sizes[j]:
-            max_=sizes[j]
-            position = j
-    print('Now my biggest sheep has size ' + str(max_)+ " let's shear it")
-    sizes[position]=8
+    m=max(sizes)
+    print('Now my biggest sheep has size ' + str(m)+ " let's shear it")
+    sizes[sizes.index(m)]=8
     print('After shearing, here is my flock : ',sizes)
 sumsize=0
 for i in range(n):

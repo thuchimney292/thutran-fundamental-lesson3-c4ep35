@@ -18,6 +18,6 @@ while not check:
         if number and string and k:
             print("Success")
             check=True
-        else: print("Not safely")
+        else: print("Not safe")
     else:
-        print("Not safely")
+        print("Not safe")
